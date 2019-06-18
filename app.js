@@ -7,8 +7,9 @@ function countWords(){
   let countDisplay = document.getElementById("countDisplay");
   if(num === 1){
       countDisplay.innerHTML = "1 word";
-  }
-  if(num > 1) {
+  }else if(num > 1) {
     countDisplay.innerHTML = num + " words";
+  }else{
+    countDisplay.innerHTML = "0 words";
   }
 }
